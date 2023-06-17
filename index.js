@@ -3,7 +3,7 @@ let result
 if(feetLength<=400){
   result='This one is on me!'
 }
-else if(feetLength>2000){
+else if(feetLength >2000){
   result='I will gladly take your thirty bucks.'
 }
 if (feetLength>2500){
@@ -13,15 +13,19 @@ return result;
 }
 
 function ternaryCheckCity(city){
-  let message;
-  if(city='NYC'){
-    message='Ok, sounds good.'
-  }
-  else(city='Pittsburg'){
-    message='No go.'
-  }
-  return result
-  }
-
+  return city ==='NYC' ? 'Ok, sounds good.' : 'No go.';
+}
 
 function switchOnCharmFromTip(){}
+let result;
+	switch (generousTip){
+	case "generousTip":
+		result = "Thank you so much.";
+		break;
+	case "not as generous":
+		result = "Thank you.";
+		break;
+	default:
+		result = "Bye.";
+		break;
+	}
